@@ -84,7 +84,11 @@ def draw?(board)
 end
 
 def over?(board)
+<<<<<<< HEAD
   won?(board) || draw?(board)
+=======
+  won?(board) || full?(board)
+>>>>>>> e5ecbd989ac9b46ccd566ac1cc05ac9d73dd9af7
 end
 
 def winner(board)
@@ -99,8 +103,14 @@ def play(board)
     turn(board)
   end
   if won?(board)
+<<<<<<< HEAD
     puts "Congratulations #{winner(board)}!"
   elsif draw?(board)
     puts "Cat's Game!"
+=======
+    puts "Congratulations #{board[index]}"
+  elsif draw?(board)
+    puts "Cat's game"
+>>>>>>> e5ecbd989ac9b46ccd566ac1cc05ac9d73dd9af7
   end
 end
